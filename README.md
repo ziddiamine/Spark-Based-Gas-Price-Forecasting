@@ -36,11 +36,15 @@ sudo apt install default-jdk
 java -version
 
 pip install pyspark
+```
 
 Set environment variables
 Add to ~/.bashrc
+
+```bash
 nano ~/.bashrc
 export JAVA_HOME=/usr/lib/jvm/default-java
 export SPARK_HOME=$(python -c "import pyspark; print(pyspark.__path__[0])")
 export PATH=$PATH:$SPARK_HOME/bin
+```
 
